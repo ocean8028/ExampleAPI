@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExampleAPI</name>
+    </assembly>
+    <members>
+        <member name="T:ExampleAPI.Controllers.WeatherForecastController">
+            <summary>
+            Handle create example controller
+            </summary>
+        </member>
+        <member name="M:ExampleAPI.Controllers.WeatherForecastController.Get">
+            <summary>
+            Example Get with OdataOptions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ExampleAPI.WeatherForecast">
+            <summary>
+            Output
+            </summary>
+        </member>
+        <member name="P:ExampleAPI.WeatherForecast.Date">
+            <summary>
+            Date
+            </summary>
+        </member>
+        <member name="P:ExampleAPI.WeatherForecast.TemperatureC">
+            <summary>
+            TemperatureC
+            </summary>
+        </member>
+        <member name="P:ExampleAPI.WeatherForecast.TemperatureF">
+            <summary>
+            TemperatureF
+            </summary>
+        </member>
+        <member name="P:ExampleAPI.WeatherForecast.Summary">
+            <summary>
+            Summary
+            </summary>
+        </member>
+    </members>
+</doc>
