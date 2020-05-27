@@ -15,6 +15,7 @@ namespace ExampleAPI.Controllers
     /// </summary>
     //[ApiController]
     [Route("api/v1/example")]
+    [Produces("application/json")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -35,7 +36,7 @@ namespace ExampleAPI.Controllers
         [HttpGet]
         [EnableQuery]
         [ProducesResponseType(typeof(List<WeatherForecast>), 200)]
-        public IActionResult Get(/*ODataQueryOptions<WeatherForecast> options*/)
+        public IActionResult Get(ODataQueryOptions<WeatherForecast> options)
         {
             var rng = new Random();
             var res= Enumerable.Range(1, 5).Select(index => new WeatherForecast
