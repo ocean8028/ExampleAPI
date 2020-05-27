@@ -36,7 +36,7 @@ namespace ExampleAPI.Controllers
         [HttpGet]
         [EnableQuery]
         [ProducesResponseType(typeof(List<WeatherForecast>), 200)]
-        public IActionResult Get(ODataQueryOptions<WeatherForecast> options)
+        public IActionResult Get(/*ODataQueryOptions<WeatherForecast> options*/)
         {
             var rng = new Random();
             var res= Enumerable.Range(1, 5).Select(index => new WeatherForecast
